@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { AppWrap } from '../wrapper'
 import {motion} from 'framer-motion'
-import ReactTooltip from 'react-tooltip'
+//import ReactTooltip from 'react-tooltip'
 import images from '../../assets/Imagies'
 
 const skillList = [

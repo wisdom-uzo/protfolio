@@ -1,0 +1,5 @@
+export {default as Navbar} from './Navbar'
+export {default as Header} from './containers/Header'
+export {default as About} from './containers/About'
+export {default as Work} from './containers/Work'
+export {default as Skills} from './containers/Skills'

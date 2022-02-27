@@ -1,16 +1,164 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .p_tag{
+        @apply text-[0.8rem] md:text-[1.3rem] text-[#6b7688]
+        text-right w-full uppercase
+    }
+    .app__flex{
+        @apply flex justify-center items-center
+    }
+    .app__header-circles{
+        @apply md:flex-[0.75] flex flex-row justify-evenly items-start mt-[1rem] h-full
+        w-full md:flex-col flex-wrap 
+    }
+    .app__header-circles div{
+        @apply w-[100px] h-[100px] rounded-full bg-white shadow-lg m-[1rem]
+    }
+    .app__header-circles div img{
+        @apply w-[60px] h-[60px]
+    }
+    .app__header-circles div:nth-child(1){
+        @apply w-[100px] h-[100px]
+    }
+    .app__header-circles div:nth-child(2){
+        @apply w-[150px] h-[150px] m-[1.75rem]
+    }
+    .app__header-circles div:nth-child(3){
+        @apply w-[70px] h-[70px]
+    }
+    .app__header-img{
+        @apply flex-[0.6] h-[100%] flex justify-end items-end relative 
+    }
+    .app__header-img img{
+        @apply w-[100%] object-contain z-10
+    }
+    .overlay_circle{
+        @apply absolute left-0 right-0 bottom-0 z-0 w-full h-[90%]
+    }
+    .head-text{
+        @apply text-black font-[600] text-[2rem] lg:text-[3rem] text-center capitalize
+    }
+    .head-text span{
+        @apply text-[#313bac] 
+    }
+    .bold-text {
+        @apply font-[700] text-[0.9rem] md:text-[1.3rem]  text-gray-800   
+    }
+    .p-text{
+        @apply text-[0.8rem] lg:text-[1rem] text-left text-[#343942]
+    }
+    .app__profiles{
+        @apply flex justify-center items-start flex-wrap mt-[2rem]
+    }
+    .app__profile_item {
+        @apply w-[190px] justify-start flex items-start flex-col m-[2rem] lg:w-[200px]
+    }
+    .app__profile_item img{
+        @apply w-full h-[170px] object-cover rounded-xl 
+    }
+    .app__container{
+        @apply w-full min-h-[100vh] flex flex-row
+    }
+    .app__flex{
+        @apply flex items-center justify-center
+    }
+    .app__wrapper{
+        @apply flex-1 w-full flex-col lg:py-[4rem] px-[2rem] 
+    }
+    .copyright{
+        @apply w-full flex flex-col justify-end items-end
+    }
+    .copyright p{
+        @apply uppercase text-black
+    }
+    .app__navigation{
+        @apply flex flex-col justify-center items-center p-[1rem]
+
+    }
+    .app__navigation-dot{
+        @apply w-[10px] h-[10px]  lg:w-[15px] lg:h-[15px]  bg-[#cbcbcb] rounded-full my-[0.5rem] transition-all ease-in-out hover:bg-[#313bac]
+    }
+    .app__social {
+        @apply  flex justify-end items-center flex-col p-[1rem]
+    }
+    .app__social div{
+        @apply h-[40px] w-[40px] rounded-full bg-white my-[0.25rem] border border-gray-100
+        flex justify-center items-center transition-all ease-in-out shadow-lg
+       hover:bg-[#313bac] 
+    }
+    .app__social div svg{
+        @apply w-[15px] h-[15px] text-[#313bac]
+    }
+
+
+    .app__works{
+        @apply flex-1 w-full flex-col
+    }
+    .app__work-filter{
+        @apply flex flex-row justify-center items-center flex-wrap my-[4rem] 
+    }
+    .app__work-filter-item{
+        @apply py-[0.5rem] px-[1rem] rounded-md bg-white font-[600] text-[#000]
+        cursor-pointer transition-all ease-in-out m-[0.5rem] hover:bg-[#313bac] hover:text-white
+    }
+    .item-active{
+        @apply bg-[#313bac] text-white
+    }
+    .app__work-portfolio{
+        @apply flex flex-wrap justify-center items-center
+    }
+    .app__work-item{
+        @apply w-[240px] lg:w-[270px] cursor-pointer flex-col m-[2rem] p-[0.6rem] rounded-md bg-white text-black 
+        transition-all ease-in-out hover:shadow-2xl
+    }
+    .app__work-img{
+        @apply w-full h-[180px] relative
+    }
+    .app__work-img img{
+        @apply w-full h-full rounded-md object-cover
+    }
+    .app__work-hover{
+        @apply absolute
+        top-0 left-0 bottom-0 w-full right-0 h-full bg-[rgba(0,0,0,0.5)] rounded-md
+        opacity-0 transition-all ease-in-out hover:opacity-100;
+    }
+    .app__work-hover div{
+       @apply h-[40px] w-[40px] transition-all ease-in-out m-[1rem] cursor-pointer font-[800] rounded-full bg-[rgba(0,0,0,0.8)] text-white
+    }
+    .app__work-content{
+        @apply p-[0.5rem] w-full relative flex-col
+    }
+    .app__work-content h4{
+        @apply mt-[0.5rem]
+    }
+    .app__work-tag{
+        @apply absolute px-[1rem] py-[0.5rem] bg-white top-[-25px] rounded-lg
+    }
+    .app__skills{
+        @apply flex-1 w-full flex-col
+    }
+    .app__skills-container{
+        @apply w-[80%] mt-[3rem] flex flex-row md:w-full md:flex-col
+    }
+    .app__skills-list{
+        @apply flex-1 flex flex-wrap justify-center items-center mr-[0rem]
+    }
+    .app__skills-item{
+        @apply flex-col flex text-center m-[1rem] transition-all ease-in-out
+    }
+    .app__skills-item div{
+        @apply w-[90px] h-[90px] bg-white rounded-full hover:shadow-xl 
+    }
+    .app__skills-item div img{
+        @apply w-[50px] h-[50px] bg-white rounded-full 
+    }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
+/*
+.copyright {
+    padding: 2rem 0 0;
+  } */

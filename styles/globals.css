@@ -64,10 +64,10 @@
         @apply w-full min-h-[100vh] flex flex-row
     }
     .app__flex{
-        @apply flex items-center justify-center
+        @apply flex items-center justify-center 
     }
     .app__wrapper{
-        @apply flex-1 w-full flex-col lg:py-[4rem] px-[2rem] 
+        @apply flex-1 w-full flex-col 
     }
     .copyright{
         @apply w-full flex flex-col justify-end items-end
@@ -76,14 +76,14 @@
         @apply uppercase text-black
     }
     .app__navigation{
-        @apply flex flex-col justify-center items-center p-[1rem]
+        @apply flex flex-col justify-center items-center mr-1
 
     }
     .app__navigation-dot{
         @apply w-[10px] h-[10px]  lg:w-[15px] lg:h-[15px]  bg-[#cbcbcb] rounded-full my-[0.5rem] transition-all ease-in-out hover:bg-[#313bac]
     }
     .app__social {
-        @apply  flex justify-end items-center flex-col p-[1rem]
+        @apply  flex justify-end items-center flex-col pl-[1rem]
     }
     .app__social div{
         @apply h-[40px] w-[40px] rounded-full bg-white my-[0.25rem] border border-gray-100
@@ -109,10 +109,10 @@
         @apply bg-[#313bac] text-white
     }
     .app__work-portfolio{
-        @apply flex flex-wrap justify-center items-center
+        @apply flex flex-wrap justify-center items-center gap-4 lg:gap-6
     }
     .app__work-item{
-        @apply w-[240px] lg:w-[270px] cursor-pointer flex-col m-[2rem] p-[0.6rem] rounded-md bg-white text-black 
+        @apply w-[200px] lg:w-[250px] cursor-pointer flex-col  p-[0.6rem] rounded-md bg-white text-black 
         transition-all ease-in-out hover:shadow-2xl
     }
     .app__work-img{

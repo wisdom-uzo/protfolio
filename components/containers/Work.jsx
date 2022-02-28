@@ -60,7 +60,7 @@ const Work = () => {
 
 
   return (
-    <div>
+    <div className='flex flex-col justify-center items-center w-full'>
         <h2 className="head-text">My Creative 
         <span> Portfolio</span> Setion
         </h2>
@@ -128,6 +128,8 @@ const Work = () => {
                     </div>
                 ))}
         </motion.div>
+
+        
     </div>
   )
 }

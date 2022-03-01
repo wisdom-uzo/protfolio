@@ -16,7 +16,7 @@ const [toggle, setToggle ] = useState(false)
         border border-gray-100 backdrop-blur-sm px-[2rem] bg-[rgba(255,255,255,0.25)] ">
       
         <div className="flex justify-start items-center">
-             <img src={images.logo.src} alt="" className="w-[90px] h-[20px] lg:w-[180px] lg:h-[40px]" />
+             <img src={images.logo.src} alt="" className="w-[100px] h-[40px] lg:w-[200px] lg:h-[50px]" />
         </div>
 
 
